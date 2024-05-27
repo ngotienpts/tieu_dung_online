@@ -75,6 +75,20 @@
         background-color: #fb0505;
     }
 }
+.heading-tertiary {
+    position: relative;
+    padding-left: 0.5rem;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 3px;
+        height: 26px;
+        left: 0;
+        border-radius: 0.625rem;
+        background-color: #fb0505;
+    }
+}
 .box-media {
     padding: 2.5rem 1.875rem 1.25rem;
     position: relative;
@@ -171,53 +185,6 @@
                 }
             }
         }
-    }
-}
-
-.newspaper {
-    position: relative;
-    overflow: hidden;
-    border: 1px solid rgba(39, 154, 47, 0.4);
-    &::before {
-        content: "";
-        background-image: linear-gradient(
-            180deg,
-            #f6f7fbb8 30%,
-            #f6f7fb 50%,
-            #f6f7fb 100%
-        );
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-    &-content {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        width: 100%;
-        text-align: center;
-        padding: 1.875rem;
-    }
-    &-logo-nn {
-        img {
-            margin: auto;
-        }
-    }
-
-    .doted {
-        margin: 3rem auto;
-        max-width: 200px;
-        border-bottom: 2px dashed #152764;
-    }
-
-    .hotline-icon {
-        width: 2rem;
-        height: 2rem;
-        background-color: #fff;
-        border-radius: 50%;
     }
 }
 

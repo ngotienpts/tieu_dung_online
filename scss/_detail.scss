@@ -57,7 +57,7 @@
     }
 
     & blockquote {
-        background-color: #f2efea;
+        background-color: #fcf8ee;
         padding: 18px 15px;
         margin-bottom: 1.25rem;
 
@@ -128,7 +128,7 @@
 
 .detail-tag-icon {
     font-size: 14px;
-    background: #f2efea;
+    background: #f7f7f7;
     height: 36px;
     width: 70px;
     position: relative;
@@ -142,7 +142,7 @@
         height: 0;
         border-top: 18px solid transparent;
         border-bottom: 18px solid transparent;
-        border-left: 8px solid #f2efea;
+        border-left: 8px solid #f7f7f7;
         right: -8px;
         position: absolute;
     }
@@ -160,7 +160,7 @@
     font-size: 15px;
     position: relative;
     &:nth-child(odd) {
-        color: #096639;
+        color: #ff0000;
     }
     &::before {
         position: absolute;
@@ -178,7 +178,7 @@
         content: "";
     }
     & a:hover {
-        color: #096639;
+        color: #ff0000;
     }
 }
 
@@ -191,5 +191,23 @@
                 border-bottom: none;
             }
         }
+    }
+}
+
+.detail-related-news {
+    &__heading {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    &__list {
+        padding-left: 20px;
+    }
+    &__item {
+        list-style: disc;
+        font-size: 16px;
+        line-height: 130%;
+        margin-bottom: 15px;
     }
 }

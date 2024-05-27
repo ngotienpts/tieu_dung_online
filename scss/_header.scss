@@ -112,7 +112,7 @@
             font-weight: 800;
             line-height: 130%;
             text-transform: uppercase;
-            color: #096639;
+            color: #333;
             &::before {
                 content: "";
             }
@@ -124,7 +124,7 @@
             left: -1.75rem;
             transform: translateY(-50%);
             font-size: 28px;
-            color: #acce22;
+            color: #fb0505;
         }
         &:last-child {
             user-select: none;

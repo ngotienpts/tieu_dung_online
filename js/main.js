@@ -9,9 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // search mb
     var searchMbs = document.querySelectorAll(".js__searchMb");
 
-    // show popup image
-    var oneSlides = document.querySelectorAll(".js__swiperItemsContainer");
-
     // navbar mb
     var navbarMb = document.querySelector(".js__navbarMenuMb");
 
@@ -103,24 +100,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
         },
-        // slider one item
-        sliderOneItems: function () {
-            oneSlides.forEach((item) => {
-                var pagi = item.querySelector(".swiper-pagination");
-                var slider = item.querySelector(".js__swiperItems");
-                new Swiper(slider, {
-                    slidesPerView: 1,
-                    spaceBetween: 30,
-                    slidesPerGroup: 1,
-                    autoHeight: true,
-                    effect: "fade",
-                    pagination: {
-                        el: pagi,
-                        clickable: true,
-                    },
-                });
-            });
-        },
         // scroll top
         scrollFunc: function () {
             if (backTop) {
@@ -149,8 +128,6 @@ document.addEventListener("DOMContentLoaded", function () {
         start: function () {
             // su ly cac su kien
             this.handleEvent();
-            // slider one item
-            this.sliderOneItems();
             // window scroll
             this.windowScroll();
         },
